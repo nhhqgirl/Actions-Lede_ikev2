@@ -6,7 +6,7 @@
 echo "【DIY-PART1】开始拉取 nftables 版本 OpenClash"
 
 # 删除旧缓存，防止还是master(iptables)分支
-rm -rf package/luci-app-openclash
+rm -rf feeds/luci/applications/luci-app-openclash
 
 # 克隆 nftables 分支
 git clone -b nftables --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
